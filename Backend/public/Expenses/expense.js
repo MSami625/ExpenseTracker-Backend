@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", fetchExpenses);
-const API_BASE_URL = "http://localhost:4000";
+const API_BASE_URL = "https://expensetracker-two-henna.vercel.app";
 
 const premiumBtn = document.getElementById("rzp-button1");
 const leaderboardBtn = document.getElementById("show-leaderboard");
