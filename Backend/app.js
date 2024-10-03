@@ -31,11 +31,11 @@ app.use("/api/", forgotPwRoute);
 
 const PORT = process.env.PORT || 4000;
 
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
-app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
-});
+// app.use((req, res) => {
+//   res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
+// });
 
 connectDB()
   .then(() => {
