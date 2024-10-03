@@ -1,5 +1,5 @@
 // SingUp Functionality
-const API_BASE_URL = "https://expensetracker-two-henna.vercel.app/";
+const API_BASE_URL = "https://expensetracker-two-henna.vercel.app";
 
 async function handleFormSubmitSignUp(e) {
   try {
