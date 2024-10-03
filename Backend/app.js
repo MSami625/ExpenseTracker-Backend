@@ -23,11 +23,11 @@ app.use(
 app.use(express.json());
 
 // Routes
-app.use("/api/", authRoute);
-app.use("/api/", expensesRoute);
-app.use("/api/", paymentRoute);
-app.use("/api/", premiumRoute);
-app.use("/api/", forgotPwRoute);
+app.use("/api", authRoute);
+app.use("/api", expensesRoute);
+app.use("/api", paymentRoute);
+app.use("/api", premiumRoute);
+app.use("/api", forgotPwRoute);
 
 const PORT = process.env.PORT || 4000;
 
