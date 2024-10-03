@@ -11,7 +11,7 @@ document
     if (email) {
       try {
         const response = await axios.post(
-          `${API_BASE_URL}/password/forgotpassword`,
+          `${API_BASE_URL}/api/password/forgotpassword`,
           { email }
         );
         message.textContent = response.data.message;
@@ -44,7 +44,7 @@ document
 
     try {
       const response = await axios.post(
-        `${API_BASE_URL}/password/resetpassword`,
+        `${API_BASE_URL}/api/password/resetpassword`,
         { password, resetToken }
       );
       message.textContent = response.data.message;
