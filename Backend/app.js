@@ -22,6 +22,8 @@ app.use(
 );
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, "public")));
+
 // Routes
 app.use("/api", authRoute);
 app.use("/api", expensesRoute);
@@ -30,8 +32,6 @@ app.use("/api", premiumRoute);
 app.use("/api", forgotPwRoute);
 
 const PORT = process.env.PORT || 4000;
-
-app.use(express.static(path.join(__dirname, "public")));
 
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
