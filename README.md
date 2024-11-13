@@ -18,9 +18,22 @@
 - **Backend**: Node.js with Express for server-side logic.
 - **Database**: MongoDB for data storage, providing a flexible schema.
 - **Authentication**: JWT for secure authentication and session management.
-- **File Storage**: AWS S3 for handling file uploads securely.
+- **File Storage**: AWS S3 for handling file uploads securely (Note: in future will use cloudinary for image file storage due to aws free tier limits).
 - **Payment Gateway**: Razorpay for processing premium subscriptions securely.
 - **Security**: Helmet.js for setting various HTTP headers to help protect the app from well-known web vulnerabilities.
+
+# Test Login
+Email: test@test.com .
+Password: test
+
+## Some Glimpses of Frontend
+1.
+![Screenshot 2024-11-13 203528](https://github.com/user-attachments/assets/e8a33bcc-b87b-4740-97da-1fb6e711f2c5)
+
+2.
+![image](https://github.com/user-attachments/assets/6203cade-75d9-4bdd-9df5-f89103bfaf71)
+
+
 
 ## Setup Instructions
 
